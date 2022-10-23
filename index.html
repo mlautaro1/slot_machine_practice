@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slot Machine</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="main-container">
+        <div id="bg">
+            <div id="img-container">
+
+                    <div class="img"></div>
+                    <div class="img"></div>
+                    <div class="img"></div>
+                    <div class="img"></div>
+                    <div class="img"></div>
+
+                    <div class="img"></div>
+                    <div class="img"></div>
+                    <div class="img"></div>
+                    <div class="img"></div>
+                    <div class="img"></div>
+
+                    <div class="img"></div>
+                    <div class="img"></div>
+                    <div class="img"></div>
+                    <div class="img"></div>
+                    <div class="img"></div>
+             
+            </div>
+
+            <div id="btn-container">
+                <div class="btn-div">
+                    <button type="button" id="spin-btn"><span>Spin</span></button>
+                </div>
+                <div class="retry-div">
+                    <button type="button" id="retry-btn"><span>Retry</span></button>
+                </div>
+                <div id="result">
+                    <span id="span-result"></span>
+                </div>
+            </div>
+
+        </div>
+
+        <div id="display">
+             <div id="display-grid">
+                <div class="display-grid-item">
+                    <div class="bet-container">
+                        <label for="min-bet" >Min Bet</label>
+                        <input type="button" value="10$" id="min-bet">
+                    </div>
+                     
+                </div>
+
+                <div class="display-grid-item">
+                    <div class="bet-container">
+                        <label for="bet-amount" >Enter Bet Amount</label>
+                        <input type="number" min="10" id="bet-amount" placeholder="Not working">
+                        <input type="button" value="Confirm" id="confirm-button" disabled>
+                    </div>
+                </div>
+
+                <div class="display-grid-item">
+                    <label for="max-bet">Max Bet</label>
+                    <input type="button" value="100$" id="max-bet">
+                </div>
+                
+
+                <div class="display-grid-item">
+                    <span>Cash:</span>
+                    <div id="cash-display">
+                        <span id="cash-output"></span>
+                    </div>
+                </div>
+
+                <div class="display-grid-item">
+                    <span>Bet:</span>
+                    <div id="bet-display">
+                        <span id="bet-output"></span>
+                    </div>
+                </div>
+
+
+                <div class="display-grid-item">
+                    <span>Win:</span>
+                    <div id="win-display">
+                        <span id="win-output"></span>
+                    </div>
+                </div>
+             </div>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>

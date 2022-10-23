@@ -1,0 +1,13 @@
+1. At the start, show colors randomly sorted.
+2. After user enters bet amount and clics confirm, spin.
+	2.1 For spin, take colors and randomly sort them.
+	2.2 If there is a match, either vertically or horizontally of 3 or more colors, print win.
+	2.3 If more than one color is matched, add+ to the win. 
+	2.4 If there is no match, show retry button.
+	2.5 After its done spinning, update cash counter. 
+
+
+Determining a match:
+1. Get all elements with datset "img-" + (i + 1)
+
+Analize first 3 items of each row 
